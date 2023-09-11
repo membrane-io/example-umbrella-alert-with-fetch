@@ -13,7 +13,7 @@ export const Root = {
     return "Ready";
   },
 
-  async configure({ args: { apiKey, zipCode, countryCode } }) {
+  async configure({ apiKey, zipCode, countryCode }) {
     // Retrieve lat/lon for the given zip/country code
     const params = new URLSearchParams({
       zip: `${zipCode},${countryCode}`,
